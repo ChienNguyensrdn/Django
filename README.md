@@ -1,5 +1,18 @@
 # Django
-Project nhóm CNPM-Python 
-Buổi 1 
-Giới thiệu Django 
-Install môi trường 
+ELearning
+    |- Quản lý Course 
+        |-
+        |-
+        |-
+
+    |- Quản lý điểm 
+        |-
+        |-
+        |-
+    |- Performance (đánh giá khoá học )
+        |-
+        |-
+    |- Report (Khoá học )
+        |-
+        |-
+    |- ....
