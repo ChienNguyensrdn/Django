@@ -4,11 +4,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: python manage.py runserver 0.0.0.0:9000
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/app
     ports:
-      - "9000:9000"
+      - "8000:8000"
     depends_on:
       - db
 
@@ -16,8 +16,8 @@ services:
     image: postgres:14
     environment:
       POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: Aa@123456
-      POSTGRES_DB: DjangoDB
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydatabase
     volumes:
       - db_data:/var/lib/postgresql/data
     ports:
