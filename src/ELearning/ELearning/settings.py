@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'ELearning.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'DjangoDB',
+        'NAME': 'mydatabase',
         'USER': 'myuser',
-        'PASSWORD': 'Aa@123456',
+        'PASSWORD': 'mypassword',
         'HOST': 'db',  # Tên dịch vụ trong docker-compose
         'PORT': 5432,
     }
