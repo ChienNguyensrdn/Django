@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'ELearning.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'DjangoDB',
+        'USER': 'myuser',
+        'PASSWORD': 'Aa@123456',
+        'HOST': 'db',  # Tên dịch vụ trong docker-compose
+        'PORT': 5432,
     }
 }
 
