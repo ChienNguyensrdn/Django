@@ -8,6 +8,7 @@ class Course(models.Model):
     startDate = models.DateField()
     endDate = models.DateField()
     active = models.BooleanField()
+    description = models.CharField(max_length= 150, null=True)
     def __str__(self):
         return f"{self.name} {self.year}"
     

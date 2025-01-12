@@ -14,7 +14,7 @@ inputUserName.send_keys("admin")
 time.sleep(2.5)
 
 password  = driver.find_element(By.NAME,value="password")
-print(inputUserName)
+# print(inputUserName)
 password.send_keys("123456")
 time.sleep(2.5)
 
